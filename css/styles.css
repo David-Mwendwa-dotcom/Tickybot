@@ -1,6 +1,6 @@
 * {
     margin: 0 auto;
-    font-family: monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar {
@@ -39,10 +39,9 @@ li {
 
 .header-title {
     color: #18364b;
-    font-size: 60px;
+    font-size: 8vw;
     text-align: center;
     padding: 24px;
-    max-width: 100%;
 }
 
 .underline {
@@ -59,21 +58,33 @@ li {
 }
 
 .btn-slack {
-    display: inline-block;
-    margin-top: 48px;
-    font-size: 30px;
+    margin-top: 18px;
+    padding: 12px 24px;
     border-style: none;
-    border-radius: 6px;
-    padding: 20px 36px;
-    max-width: 100%;
-    height: auto;
+    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.btn-content {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 400px) {
+    .btn-slack {
+        width: 100%;
+    }
+    .btn-content {
+        display: flex;
+    }
 }
 
 .bot {
     justify-content: center;
     border-radius: 50%;
     height: auto;
-    max-width: 100%;
+    width: 400px;
 }
 
 .desc {
@@ -135,14 +146,15 @@ li {
     padding-top: 60px;
 }
 
-.btn {
-    max-width: 100px;
+.btn-content p {
+    padding-top: 5%;
 }
 
 span img {
-    text-align: left;
-    width: 32px;
+    text-align: center;
+    width: 36px;
     height: 36px;
+    padding: 6px;
 }
 
 .img-open img {
@@ -224,9 +236,16 @@ footer a {
     background-color: gray;
 }
 
-.adjourn button:hover>span .lst-img {
-    transform: rotate(25deg);
-    transition-duration: 2s;
+.header button:hover {
+    background-color: #abcde6;
+}
+
+.adjourn button:hover>span .lst-img,
+.header button:hover>span img {
+    transform: rotate(20deg);
+    transition-duration: 1s;
+    width: 54px;
+    height: 54px;
 }
 
 @media(max-width:800px) {
@@ -239,16 +258,7 @@ footer a {
     }
 }
 
-@media(max-width:400px) {
-    button {
-        font-size: 5vw;
-        width: 100%;
-        height: 20px;
-        padding: 8px 18px;
-    }
-}
-
-@media(max-width:800px) {
+@media(max-width:600px) {
     body,
     .header-text,
     .header-title {
@@ -257,10 +267,12 @@ footer a {
         padding: 12px;
         text-align: center;
     }
+    .bot {
+        width: 100%;
+    }
 }
 
 @media(max-width:800px) {
-    .header-text,
     .header-title {
         font-size: 10vw;
     }
