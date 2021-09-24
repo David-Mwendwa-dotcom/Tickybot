@@ -1,0 +1,267 @@
+* {
+    margin: 0 auto;
+    font-family: monospace;
+}
+
+.navbar {
+    padding: 8px;
+    background: #405d72;
+    margin: 0;
+    font-size: larger;
+    max-width: 100%;
+    /*height: 62px;*/
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(238, 204, 12);
+}
+
+li {
+    margin: 12px 12px 12px 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    padding: 24px;
+    display: flex;
+    background: #49b5e0;
+    color: #ffffff;
+}
+
+.header-title {
+    color: #18364b;
+    font-size: 60px;
+    text-align: center;
+    padding: 24px;
+    max-width: 100%;
+}
+
+.underline {
+    border-bottom-style: solid;
+    border-color: #49b5e0;
+    padding-bottom: 0px;
+}
+
+.header-text {
+    padding: 24px;
+    text-align: center;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+.btn-slack {
+    display: inline-block;
+    margin-top: 48px;
+    font-size: 30px;
+    border-style: none;
+    border-radius: 6px;
+    padding: 20px 36px;
+    max-width: 100%;
+    height: auto;
+}
+
+.bot {
+    justify-content: center;
+    border-radius: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+.desc {
+    background-color: #f0f8ff;
+    margin-top: 0;
+}
+
+.description-paragraph,
+.reminder {
+    /*margin: 18px 36px;*/
+    padding: 32px;
+    display: flex;
+}
+
+.description-header {
+    padding: 18px;
+}
+
+.description-header p {
+    /*margin-top: 28px;*/
+    text-align: center;
+    font-size: 42px;
+}
+
+.explanation-one,
+.explanation-two,
+.reminder p {
+    font-size: larger;
+    padding: 18px;
+    /*margin-left: 16px;*/
+    line-height: 1.8;
+}
+
+.general-demo {
+    background-color: #7ae781;
+    padding: 24px;
+}
+
+.demonstration {
+    display: flex;
+}
+
+.general-demo p,
+.img {
+    text-align: center;
+    font-size: 42px;
+    padding: 18px;
+}
+
+.addbot .img-add,
+.openticket .img-open,
+.closeticket .img-close {
+    background-color: rgba(8, 26, 59, 0.979);
+    height: 320px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.btn {
+    max-width: 100px;
+}
+
+span img {
+    text-align: left;
+    width: 32px;
+    height: 36px;
+}
+
+.img-open img {
+    border-radius: 50%;
+}
+
+.img-close img,
+.img-add img {
+    border-radius: 12px;
+}
+
+.addbot,
+.openticket,
+.closeticket {
+    max-width: 360px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.addbot p,
+.openticket p,
+.closeticket p {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #f0f8ff;
+    padding: 18px;
+    color: gray;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.info {
+    height: 200px;
+}
+
+.info p {
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.adjourn {
+    background-color: #f0f8ffe1;
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.adjourn-header {
+    padding: 24px;
+    font-size: 42px;
+}
+
+.adjourn div p {
+    padding: 24px;
+    justify-content: center;
+}
+
+.adjourn button {
+    background-color: #18364b;
+    color: #abcde6;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 28px;
+    background-color: #17354ade;
+    color: #f0f8ff;
+    text-align: center;
+    line-height: 2;
+}
+
+footer a {
+    color: #f0f8ff;
+}
+
+.adjourn button:hover {
+    background-color: gray;
+}
+
+.adjourn button:hover>span .lst-img {
+    transform: rotate(25deg);
+    transition-duration: 2s;
+}
+
+@media(max-width:800px) {
+    .header,
+    .description-paragraph,
+    .reminder,
+    .demonstration {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width:400px) {
+    button {
+        font-size: 5vw;
+        width: 100%;
+        height: 20px;
+        padding: 8px 18px;
+    }
+}
+
+@media(max-width:800px) {
+    body,
+    .header-text,
+    .header-title {
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+@media(max-width:800px) {
+    .header-text,
+    .header-title {
+        font-size: 10vw;
+    }
+}
