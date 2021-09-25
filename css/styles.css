@@ -264,7 +264,7 @@ footer a {
     .header-title {
         width: 100%;
         margin: 0 auto;
-        padding: 12px;
+        padding: 0;
         text-align: center;
     }
     .bot {
