@@ -10,9 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body id="mainPage">
         <nav class="navbar">
-            <div class="navbar-nav">
+            <div class="navbar-nav" id="mainHead">
                 <ul class="nav-items">
                     <li><a class="nav-item" href="#Home">Home</a></li>
                     <li><a class="nav-item" href="#About">About</a></li>
@@ -21,11 +21,11 @@
                 </ul>
             </div>
         </nav>
-        <div class="header">
+        <div class="header" id="Home">
             <div class="header-text">
                 <h1 class="header-title"><strong>Ticky</strong>Bot</h1>
                 <h6 class="description">Let your team manage their support tickets<br/>100% inside slack</h6>
-                <button class="btn-slack" type="button">
+                <button class="btn-slack" type="button" value="click" onclick="DoSignup()">
                     <span class="btn-content first-btn"><img src="images/btn-icon-removebg.png"/>
                         <p>Add to <strong>slack</strong></p>
 
@@ -37,7 +37,7 @@
                 <img class="bot" src="images/download.png" alt="TickyBot"/>
             </div>
         </div>
-        <div class="desc">
+        <div class="desc" id="About">
             <div class="description-header">
                 <p>W<span class="underline">hat is <strong>Ticky</span></strong>Bot</p>
 
@@ -59,7 +59,7 @@
                 </p>
             </div>
         </div>
-        <div class="general-demo">
+        <div class="general-demo" id="Features">
             <p>H<span class="underline">ow It Wor</span>ks</p>
             <div class="demonstration">
                 
@@ -120,7 +120,7 @@
             <p>Source code is available on our <a href="#">Github page</a></p>
             <p>The app is not created by, affiliated with or supported by slack Technologies, Inc</p>
         </footer>
-        <button>Top</button>
-        <script src="" async defer></script>
+        <button type="button" class="top" onclick = "Top()"><img src="images/navigate_top.png" alt="Top"/></button>
+        <script type="text/javascript" src="/js/javascript.js"></script>
     </body>
 </html>

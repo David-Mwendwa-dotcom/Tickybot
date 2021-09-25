@@ -17,11 +17,14 @@
     justify-content: center;
     list-style-type: none;
     text-decoration: none;
+    margin-left: 0;
+    padding: 4px;
 }
 
 .nav-item {
     text-decoration: none;
     color: rgb(238, 204, 12);
+    padding: 2px;
 }
 
 li {
@@ -69,6 +72,25 @@ li {
 .btn-content {
     display: flex;
     justify-content: center;
+}
+
+.top {
+    padding: 0;
+    border-style: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.top img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    border-style: none;
 }
 
 @media(max-width: 400px) {
@@ -256,19 +278,33 @@ footer a {
         flex-direction: column;
         text-align: center;
     }
+    .addbot,
+    .openticket,
+    .closeticket {
+        max-width: 360px;
+    }
+    .navbar {
+        margin: 0 auto;
+        padding: 2px;
+    }
 }
 
 @media(max-width:600px) {
-    body,
+    body {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
     .header-text,
     .header-title {
-        width: 100%;
         margin: 0 auto;
         padding: 0;
         text-align: center;
     }
     .bot {
         width: 100%;
+        margin-top: 18px;
     }
 }
 
