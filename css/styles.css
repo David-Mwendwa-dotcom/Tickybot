@@ -256,18 +256,11 @@ footer a {
 
 .adjourn button:hover {
     background-color: gray;
+    resize: none;
 }
 
 .header button:hover {
     background-color: #abcde6;
-}
-
-.adjourn button:hover>span .lst-img,
-.header button:hover>span img {
-    transform: rotate(20deg);
-    transition-duration: 1s;
-    width: 54px;
-    height: 54px;
 }
 
 @media(max-width:800px) {
