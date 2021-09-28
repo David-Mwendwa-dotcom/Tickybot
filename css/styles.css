@@ -33,6 +33,18 @@ li {
     text-decoration: none;
 }
 
+.header .description {
+    position: relative;
+    animation: slide_down;
+    animation-duration: 4s;
+}
+
+.header .btn-slack {
+    position: relative;
+    animation: slide_down_v2;
+    animation-duration: 3s;
+}
+
 .header {
     padding: 24px;
     display: flex;
@@ -45,6 +57,9 @@ li {
     font-size: 8vw;
     text-align: center;
     padding: 24px;
+    position: relative;
+    animation: slide_down;
+    animation-duration: 4s;
 }
 
 .underline {
@@ -107,6 +122,9 @@ li {
     border-radius: 50%;
     height: auto;
     width: 400px;
+    position: relative;
+    animation: slide_down;
+    animation-duration: 4s;
 }
 
 .desc {
@@ -114,15 +132,21 @@ li {
     margin-top: 0;
 }
 
-.description-paragraph,
-.reminder {
+.description-paragraph {
     /*margin: 18px 36px;*/
     padding: 32px;
     display: flex;
 }
 
+.reminder {
+    padding: 0 32px;
+}
+
 .description-header {
     padding: 18px;
+    position: relative;
+    animation: slide_down;
+    animation-duration: 2s;
 }
 
 .description-header p {
@@ -193,7 +217,33 @@ span img {
 .closeticket {
     max-width: 360px;
     margin: 0 auto;
+    position: relative;
+}
+
+#ticky,
+#close {
+    color: #ff0000c7;
+    background-color: #c4d0dd;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.addbot {
     border-radius: 30px;
+    animation: slide_down;
+    animation-duration: 2s;
+}
+
+.openticket {
+    border-radius: 30px;
+    animation: slide_down;
+    animation-duration: 3s;
+}
+
+.closeticket {
+    border-radius: 30px;
+    animation: slide_down;
+    animation-duration: 4s;
 }
 
 .addbot p,
@@ -201,7 +251,7 @@ span img {
 .closeticket p {
     font-size: 18px;
     line-height: 1.5;
-    background-color: #f0f8ff;
+    background-color: #f4f6f8;
     padding: 18px;
     color: gray;
     border-bottom-left-radius: 3px;
@@ -269,7 +319,7 @@ footer a {
     .reminder,
     .demonstration {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
     .addbot,
     .openticket,
@@ -304,5 +354,27 @@ footer a {
 @media(max-width:800px) {
     .header-title {
         font-size: 10vw;
+    }
+}
+
+@keyframes slide_down {
+    0% {
+        left: 0;
+        top: -60px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes slide_down_v2 {
+    0% {
+        left: 0;
+        top: -30px;
+    }
+    100% {
+        left: 0;
+        top: 0;
     }
 }
